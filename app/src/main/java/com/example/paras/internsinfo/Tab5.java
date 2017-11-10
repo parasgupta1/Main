@@ -1,21 +1,15 @@
 package com.example.paras.internsinfo;
 
-import android.graphics.Color;
 import android.os.AsyncTask;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.ActionBarOverlayLayout;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TableLayout;
-import android.widget.TableRow;
-import android.widget.TextView;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -29,7 +23,7 @@ import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
 
-public class Tab3 extends Fragment {
+public class Tab5 extends Fragment {
 
     private RecyclerView recyclerView;
     private GridLayoutManager gridLayoutManager;
@@ -37,12 +31,11 @@ public class Tab3 extends Fragment {
     private List<MyData> data_list;
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.activity_tab3, container, false);
 
+        public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                Bundle savedInstanceState){
 
-
+        View rootView = inflater.inflate(R.layout.activity_tab4, container, false);
         return rootView;
     }
 
@@ -78,7 +71,7 @@ public class Tab3 extends Fragment {
 
                 OkHttpClient client = new OkHttpClient();
                 Request request = new Request.Builder()
-                        .url("http://helloabc.000webhostapp.com/compete.php?id="+integers[0])
+                        .url("http://helloabc.000webhostapp.com/events.php?id="+integers[0])
                         .build();
                 try {
                     Response response = client.newCall(request).execute();
@@ -97,8 +90,8 @@ public class Tab3 extends Fragment {
 
 
 
-                } catch (IOException f) {
-                    f.printStackTrace();
+                } catch (IOException e) {
+                    e.printStackTrace();
                 } catch (JSONException e) {
                     System.out.println("End of content");
                 }

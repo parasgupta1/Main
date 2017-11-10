@@ -77,6 +77,7 @@ public class Tab2 extends Fragment {
             protected Void doInBackground(Integer... integers) {
 
                 OkHttpClient client = new OkHttpClient();
+
                 Request request = new Request.Builder()
                         .url("http://helloabc.000webhostapp.com/scholarships.php?id="+integers[0])
                         .build();

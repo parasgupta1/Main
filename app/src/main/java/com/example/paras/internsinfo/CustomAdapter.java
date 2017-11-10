@@ -26,6 +26,8 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
     private Context context;
     private List<MyData> my_data;
 
+
+
     public CustomAdapter(Context context, List<MyData> my_data) {
         this.context = context;
         this.my_data = my_data;

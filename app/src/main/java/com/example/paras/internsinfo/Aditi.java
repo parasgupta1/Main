@@ -16,5 +16,7 @@ public class Aditi extends AppCompatActivity {
         Intent I = getIntent();
         String a = I.getStringExtra("desc");
         t.setText(""+a);
+
+
     }
 }

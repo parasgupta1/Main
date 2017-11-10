@@ -72,6 +72,7 @@ public class Tab4 extends Fragment {
 
     private void load_data_from_server(int id) {
 
+
         AsyncTask<Integer,Void,Void> task = new AsyncTask<Integer, Void, Void>() {
             @Override
             protected Void doInBackground(Integer... integers) {

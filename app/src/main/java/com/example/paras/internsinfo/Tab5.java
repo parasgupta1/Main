@@ -30,6 +30,7 @@ public class Tab5 extends Fragment {
     private CustomAdapter adapter;
     private List<MyData> data_list;
 
+
     @Override
 
         public View onCreateView(LayoutInflater inflater, ViewGroup container,

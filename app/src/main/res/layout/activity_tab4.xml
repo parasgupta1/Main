@@ -11,6 +11,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.paras.internsinfo.Tab4">
 
+
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recycler_view"
         android:layout_width="match_parent"

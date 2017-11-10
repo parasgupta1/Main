@@ -60,7 +60,6 @@
 
             </android.support.design.widget.TabLayout>
             <!--  app:tabTextAppearance="@style/TextAppearance.AppCompat.Widget.PopupMenu.Header" "-->
-
         </android.support.v7.widget.Toolbar>
 
     </android.support.design.widget.AppBarLayout>

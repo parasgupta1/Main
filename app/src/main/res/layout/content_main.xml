@@ -29,7 +29,7 @@
         android:id="@+id/appbar"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:background="?attr/colorPrimaryDark"
+        android:background="@color/colorPrimaryDark"
         android:paddingTop="8dp"
         android:theme="@style/AppTheme.AppBarOverlay"
         app:expanded="false"
@@ -40,7 +40,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_alignParentLeft="true"
-            android:background="?attr/colorPrimaryDark"
+            android:background="@color/colorPrimaryDark"
             app:layout_scrollFlags="scroll|enterAlways"
             app:popupTheme="@style/AppTheme.PopupOverlay"
             android:minHeight="60dp"
@@ -50,7 +50,7 @@
                 android:id="@+id/tabs"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="?attr/colorPrimaryDark"
+                android:background="@color/colorPrimaryDark"
                 android:visibility="visible"
                 app:tabMode="scrollable"
                 app:tabTextAppearance="@style/TextAppearance.Design.Tab"
@@ -60,7 +60,6 @@
                 app:tabSelectedTextColor="@color/common_google_signin_btn_text_dark_default" >
 
             </android.support.design.widget.TabLayout>
-            <!--  app:tabTextAppearance="@style/TextAppearance.AppCompat.Widget.PopupMenu.Header" "-->
         </android.support.v7.widget.Toolbar>
 
     </android.support.design.widget.AppBarLayout>

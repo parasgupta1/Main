@@ -1,5 +1,6 @@
 package com.example.paras.internsinfo;
 
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -108,11 +109,9 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
+        if (id == R.id.profile) {
+            startActivity(new Intent(this,Profile.class));
         } else if (id == R.id.about) {
-
-        } else if (id == R.id.nav_slideshow) {
 
         } else if (id == R.id.settings) {
 
